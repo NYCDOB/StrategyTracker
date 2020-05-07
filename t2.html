@@ -127,8 +127,9 @@ d3.select("#today").html(today);
     } else {
       color = "green";
     }
-    strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
-    return strz
+    //strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
+    strz = '<span style="height:6px;display:inline-block;background-color:orange"></span>';
+	  return strz
   }
 	
 	
