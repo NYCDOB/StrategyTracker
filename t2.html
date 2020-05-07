@@ -96,10 +96,10 @@ d3.select("#today").html(today);
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
 	{id: "status", name: "Status", field: "Status", width: 150, editor: Slick.Editors.Text, formatter: statusFormatter},
 	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, asyncPostRender:doPercent,formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete},
-	{id: "%", name: "", field: "% Completion of each Milestone", width: 50, editor: Slick.Editors.Text}
+	{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
-  return parseInt(dataContext["% Completion of Stategy"])
+  return parseInt(dataContext["% Completion of Strategy"])
   
     //$(cellNode).empty().sparkline(vals, {width: "100%"});
   }
