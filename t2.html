@@ -102,13 +102,7 @@ d3.select("#today").html(today);
   //var f1=dataContext("%");
   //console.log(f1);
   debugger;  //dataContext["%"]
-    var vals = [
-      dataContext["n1"],
-      dataContext["n2"],
-      dataContext["n3"],
-      dataContext["n4"],
-      dataContext["n5"]
-    ];
+
 
     //$(cellNode).empty().sparkline(vals, {width: "100%"});
   }
@@ -121,7 +115,8 @@ d3.select("#today").html(today);
     asyncEditorLoading: false,
     autoEdit: false,
 	autoHeight: true,
-	enableAsyncPostRender: true
+	enableAsyncPostRender: true,
+   showHeaderRow:true
   };
 	
   function statusFormatter(row, cell, value, columnDef, dataContext) {
