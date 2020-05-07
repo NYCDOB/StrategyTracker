@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/smoothness/jquery-ui.css" type="text/css"/>
 	<link rel="stylesheet" href="examples.css" type="text/css"/>
   <style>
-  .sTooltip{border: 2px solid black;background-color:blue;color:white;box-shadow:none;}
+  .sTooltip{border: 2px solid white;background-color:blue;color:white;box-shadow:none;font-weight:800;}
     .cell-title {
       font-weight: bold;
     }
@@ -215,7 +215,7 @@ d3.select("#today").html(today);
 $( document ).tooltip( 
 	{ 
 	tooltipClass: "sTooltip" ,
-	show: { effect: "blind", duration: 800 }
+	show: false
 	} 
 );
 		grid.onAddNewRow.subscribe(function (e, args) {
