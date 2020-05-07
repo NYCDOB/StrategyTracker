@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-  <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
-  <title>DOB Strategy Tracker Summary Draft</title>
-  <link rel="stylesheet" href="slick.grid.css" type="text/css"/>
-  <link rel="stylesheet" href="css/smoothness/jquery-ui.css" type="text/css"/>
-  <link rel="stylesheet" href="examples.css" type="text/css"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="icon" type="image/png"  href="logo.png">
+	<title>DOB Strategy Tracker Summary Draft</title>
+	<link rel="stylesheet" href="slick.grid.css" type="text/css"/>
+	<link rel="stylesheet" href="css/smoothness/jquery-ui.css" type="text/css"/>
+	<link rel="stylesheet" href="examples.css" type="text/css"/>
   <style>
     .cell-title {
       font-weight: bold;
@@ -52,7 +52,7 @@
 	<div class="grid-header2" id="grid-header-div2" style="width:100%">
 		<label>Last Updated: <span id="today"></span></label>
 	</div>
-    <div id="myGrid" style="width:100%;height:120px;"></div>
+    <div id="myGrid" style="width:100%;zheight:120px;"></div>
   </div>
 </div>
 <script src="jsData.js"></script>
@@ -83,7 +83,6 @@ today = mm + '/' + dd + '/' + yyyy;
 d3.select("#today").html(today);
 	
   var grid;
-  var data = [];
   var columns = [
     {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title", editor: Slick.Editors.Text},
     {id: "goal", name: "Goal", field: "Goal", editor: Slick.Editors.Text},
