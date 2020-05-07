@@ -99,11 +99,8 @@ d3.select("#today").html(today);
 	{id: "%", name: "", field: "% Completion of each Milestone", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
-  //var f1=dataContext("%");
-  //console.log(f1);
-  debugger;  //dataContext["%"]
-
-
+  return parseInt(dataContext["% Completion of Stategy"])
+  
     //$(cellNode).empty().sparkline(vals, {width: "100%"});
   }
 
