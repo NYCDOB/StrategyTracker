@@ -95,7 +95,7 @@ d3.select("#today").html(today);
     {id: "start", name: "Start Date", field: "Start Date", minWidth: 60, editor: Slick.Editors.Date},
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
 	{id: "status", name: "Status", field: "Status", width: 100, editor: Slick.Editors.Text, formatter: statusFormatter},
-	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, asyncPostRender:doPercent,formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete},
+	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, asyncPostRender:doPercent,formatter: dobFormatter, editor: Slick.Editors.PercentComplete},
 	{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
@@ -114,6 +114,24 @@ d3.select("#today").html(today);
 	autoHeight: true,
 	enableAsyncPostRender: true
   };
+  function dobFormatter(row, cell, value, columnDef, dataContext) {
+    pValue=parseInt(dataContext["% Completion of Strategy"]);
+    if (pValue == null || pValue === "") {
+      return "";
+    }
+	  
+    var color;
+    if (value < 30) {
+      color = "red";
+    } else if (value < 70) {
+      color = "silver";
+    } else {
+      color = "green";
+    }
+
+    return "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
+  }
+	
 	
   function statusFormatter(row, cell, value, columnDef, dataContext) {
 	var rtn = { text: value, removeClasses: 'green yellow blue red'};
