@@ -86,7 +86,7 @@ d3.select("#today").html(today);
   var grid;
   var columns = [
     {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title", editor: Slick.Editors.Text},
-    {id: "goal", name: "Goal", field: "Goal", width:100,editor: Slick.Editors.Text},
+    {id: "goal", name: "Goal", field: "Goal", width:2	00,editor: Slick.Editors.Text},
 	{id: "strategy", name: "Strategy Name", field: "Strategy", width: 300, editor: Slick.Editors.Text},
 	{id: "summary", name: "Summary/Objective", field: "Summary", width: 370, editor: Slick.Editors.Text},
 	{id: "source", name: "Source", field: "Source", width: 100, editor: Slick.Editors.Text},
@@ -99,8 +99,8 @@ d3.select("#today").html(today);
 	{id: "%", name: "", field: "% Completion of each Milestone", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
-  var f1=dataContext("%");
-  console.log(f1);
+  //var f1=dataContext("%");
+  //console.log(f1);
   debugger;  //dataContext["%"]
     var vals = [
       dataContext["n1"],
@@ -216,7 +216,7 @@ d3.select("#today").html(today);
 $( document ).tooltip( 
 	{ 
 	tooltipClass: "sTooltip" ,
-	show: false,
+	show: {delay:300},
 	hide:false
 	} 
 );
