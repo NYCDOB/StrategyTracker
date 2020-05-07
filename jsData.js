@@ -9,7 +9,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "50%"
+    "% Completion of Strategy": "50%"
   },
   {
     "number": 2,
@@ -21,7 +21,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "60%"
+    "% Completion of Strategy": "60%"
   },
   {
     "number": 3,
@@ -33,7 +33,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 4,
@@ -45,7 +45,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 5,
@@ -57,7 +57,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 6,
@@ -69,7 +69,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 7,
@@ -81,7 +81,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 8,
@@ -93,7 +93,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 9,
@@ -105,7 +105,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 10,
@@ -117,7 +117,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 11,
@@ -129,7 +129,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 12,
@@ -141,7 +141,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 13,
@@ -153,7 +153,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 14,
@@ -165,7 +165,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 15,
@@ -177,7 +177,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 16,
@@ -189,7 +189,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 17,
@@ -200,8 +200,8 @@ var data=[
     "Bureau": "Enforcement",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "",
-    "% Completion of Stategy": "0%"
+    "Status": "In Progress",
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 18,
@@ -213,7 +213,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 19,
@@ -225,7 +225,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 20,
@@ -237,7 +237,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 21,
@@ -249,7 +249,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 22,
@@ -261,7 +261,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 23,
@@ -273,7 +273,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 24,
@@ -285,7 +285,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 25,
@@ -297,7 +297,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 26,
@@ -309,7 +309,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 27,
@@ -321,7 +321,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 28,
@@ -333,7 +333,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 29,
@@ -345,7 +345,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 30,
@@ -357,7 +357,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 31,
@@ -369,7 +369,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 32,
@@ -381,7 +381,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 33,
@@ -392,7 +392,7 @@ var data=[
     "Bureau": "Enforcement",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "",
-    "% Completion of Stategy": "0%"
+    "Status": "In Progress",
+    "% Completion of Strategy": "0%"
   }
 ]
