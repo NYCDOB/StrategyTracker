@@ -45,7 +45,7 @@
 </head>
 <body>
 <div style="position:relative">
-  <div style="width:1900px;">
+  <div style="width:1300px;">
 	<div class="grid-header" id="grid-header-div" style="width:100%">
 	<a class="logo" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank"> </a>
 		<label>DOB Strategy Tracker Summary Draft</label>
@@ -94,13 +94,13 @@ d3.select("#today").html(today);
 	{id: "bureau", name: "Bureau", field: "Bureau", width: 100, editor: Slick.Editors.Text},
     {id: "start", name: "Start Date", field: "Start Date", minWidth: 60, editor: Slick.Editors.Date},
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
-	{id: "status", name: "Status", field: "Status", width: 150, editor: Slick.Editors.Text, formatter: statusFormatter},
+	{id: "status", name: "Status", field: "Status", width: 100, editor: Slick.Editors.Text, formatter: statusFormatter},
 	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, asyncPostRender:doPercent,formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete},
 	{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
-  return parseInt(dataContext["% Completion of Strategy"])
-  
+  $(cellNode).empty().val(parseInt(dataContext["% Completion of Strategy"]))
+//	  return parseInt(dataContext["% Completion of Strategy"])
     //$(cellNode).empty().sparkline(vals, {width: "100%"});
   }
 
@@ -112,8 +112,7 @@ d3.select("#today").html(today);
     asyncEditorLoading: false,
     autoEdit: false,
 	autoHeight: true,
-	enableAsyncPostRender: true,
-   showHeaderRow:true
+	enableAsyncPostRender: true
   };
 	
   function statusFormatter(row, cell, value, columnDef, dataContext) {
