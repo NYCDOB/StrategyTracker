@@ -9,7 +9,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Stategy": "50%"
   },
   {
     "number": 2,
@@ -21,7 +21,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Stategy": "0%"
+    "% Completion of Stategy": "60%"
   },
   {
     "number": 3,
