@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/smoothness/jquery-ui.css" type="text/css"/>
 	<link rel="stylesheet" href="examples.css" type="text/css"/>
   <style>
+  .sTooltip{border: 2px solid black;background-color:blue;font-color:white;}
     .cell-title {
       font-weight: bold;
     }
@@ -94,9 +95,25 @@ d3.select("#today").html(today);
     {id: "start", name: "Start Date", field: "Start Date", minWidth: 60, editor: Slick.Editors.Date},
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
 	{id: "status", name: "Status", field: "Status", width: 150, editor: Slick.Editors.Text, formatter: statusFormatter},
-	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete},
+	{id: "%bar", name: "% Completed", field: "percentCompleteBar", width: 100, resizable: false, asyncPostRender:doPercent,formatter: Slick.Formatters.PercentCompleteBar, editor: Slick.Editors.PercentComplete},
 	{id: "%", name: "", field: "% Completion of each Milestone", width: 50, editor: Slick.Editors.Text}
   ];
+  function doPercent(cellNode, row, dataContext, colDef) {
+  var f1=dataContext("%");
+  console.log(f1);
+  debugger;  //dataContext["%"]
+    var vals = [
+      dataContext["n1"],
+      dataContext["n2"],
+      dataContext["n3"],
+      dataContext["n4"],
+      dataContext["n5"]
+    ];
+
+    $(cellNode).empty().sparkline(vals, {width: "100%"});
+  }
+
+
   var options = {
     editable: false,
     enableAddRow: false,
@@ -116,7 +133,8 @@ d3.select("#today").html(today);
 		} else if (value == "Complete") {
 			rtn.addClasses = "green";
 		} else {
-			rtn.addClasses = "red";
+			rtn.addClasses = "";
+			rtn.toolTip = "n/a"
 		}
 	}
 	return rtn;
@@ -194,6 +212,7 @@ d3.select("#today").html(today);
 		
 		grid.setSelectionModel(new Slick.CellSelectionModel());
 
+$( document ).tooltip( { tooltipClass: "sTooltip" } );
 		grid.onAddNewRow.subscribe(function (e, args) {
 		  var item = args.item;
 		  grid.invalidateRow(data.length);
