@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/smoothness/jquery-ui.css" type="text/css"/>
 	<link rel="stylesheet" href="examples.css" type="text/css"/>
   <style>
-  .sTooltip{border: 2px solid black;background-color:blue;font-color:white;}
+  .sTooltip{border: 2px solid black;background-color:blue;color:white;box-shadow:none;}
     .cell-title {
       font-weight: bold;
     }
@@ -212,7 +212,12 @@ d3.select("#today").html(today);
 		
 		grid.setSelectionModel(new Slick.CellSelectionModel());
 
-$( document ).tooltip( { tooltipClass: "sTooltip" } );
+$( document ).tooltip( 
+	{ 
+	tooltipClass: "sTooltip" ,
+	show: { effect: "blind", duration: 800 }
+	} 
+);
 		grid.onAddNewRow.subscribe(function (e, args) {
 		  var item = args.item;
 		  grid.invalidateRow(data.length);
