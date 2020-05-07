@@ -118,8 +118,7 @@ d3.select("#today").html(today);
     pValue=parseInt(dataContext["% Completion of Strategy"]);
     if (pValue == null || pValue === "") {
       return "";
-    }
-	  
+    }  
     var color;
     if (pValue < 30) {
       color = "red";
@@ -128,8 +127,8 @@ d3.select("#today").html(today);
     } else {
       color = "green";
     }
-
-    return "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
+    strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
+    return strz
   }
 	
 	
