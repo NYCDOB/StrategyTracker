@@ -86,12 +86,12 @@ d3.select("#today").html(today);
   var grid;
   var columns = [
     {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title", editor: Slick.Editors.Text},
-    {id: "goal", name: "Goal", field: "Goal", editor: Slick.Editors.Text},
+    {id: "goal", name: "Goal", field: "Goal", width:100,editor: Slick.Editors.Text},
 	{id: "strategy", name: "Strategy Name", field: "Strategy", width: 300, editor: Slick.Editors.Text},
 	{id: "summary", name: "Summary/Objective", field: "Summary", width: 370, editor: Slick.Editors.Text},
-	{id: "source", name: "Source", field: "Source", width: 200, editor: Slick.Editors.Text},
-	{id: "owner", name: "Owner", field: "Owner", width: 200, editor: Slick.Editors.Text},
-	{id: "bureau", name: "Bureau", field: "Bureau", width: 200, editor: Slick.Editors.Text},
+	{id: "source", name: "Source", field: "Source", width: 100, editor: Slick.Editors.Text},
+	{id: "owner", name: "Owner", field: "Owner", width: 100, editor: Slick.Editors.Text},
+	{id: "bureau", name: "Bureau", field: "Bureau", width: 100, editor: Slick.Editors.Text},
     {id: "start", name: "Start Date", field: "Start Date", minWidth: 60, editor: Slick.Editors.Date},
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
 	{id: "status", name: "Status", field: "Status", width: 150, editor: Slick.Editors.Text, formatter: statusFormatter},
@@ -110,7 +110,7 @@ d3.select("#today").html(today);
       dataContext["n5"]
     ];
 
-    $(cellNode).empty().sparkline(vals, {width: "100%"});
+    //$(cellNode).empty().sparkline(vals, {width: "100%"});
   }
 
 
@@ -120,7 +120,8 @@ d3.select("#today").html(today);
     enableCellNavigation: true,
     asyncEditorLoading: false,
     autoEdit: false,
-	autoHeight: true
+	autoHeight: true,
+	enableAsyncPostRender: true
   };
 	
   function statusFormatter(row, cell, value, columnDef, dataContext) {
@@ -215,7 +216,8 @@ d3.select("#today").html(today);
 $( document ).tooltip( 
 	{ 
 	tooltipClass: "sTooltip" ,
-	show: false
+	show: false,
+	hide:false
 	} 
 );
 		grid.onAddNewRow.subscribe(function (e, args) {
