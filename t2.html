@@ -111,6 +111,7 @@ d3.select("#today").html(today);
       return "";
     }  
     var color;
+    str=pValue||1;
     if (pValue < 30) {
       color = "red";
     } else if (pValue < 70) {
@@ -118,7 +119,7 @@ d3.select("#today").html(today);
     } else {
       color = "green";
     }
-    return "<span class='percent-complete-barb' style='background-color:" + color + ";width:"+pValue+"%'></span><span style='color:blue;font-size:12px'>"+pValue+"%</span>";
+    return "<span class='percent-complete-barb' style='background-color:" + color + ";width:"+str+"%'></span><span style='color:blue;font-size:10px'>"+pValue+"%</span>";
   }
   function statusFormatter(row, cell, value, columnDef, dataContext) {
 	var rtn = { text: value, removeClasses: 'green yellow blue red'};
