@@ -93,23 +93,13 @@ d3.select("#today").html(today);
 	{id: "strategy", name: "Strategy Name", field: "Strategy", width: 300},
 	{id: "summary", name: "Summary/Objective", field: "Summary", width: 370},
 	{id: "source", name: "Source", field: "Source", width: 100},
-	{id: "owner", name: "Owner", field: "Owner", width: 100},
 	{id: "bureau", name: "Bureau", field: "Bureau", width: 100},
-    {id: "start", name: "Start Date", field: "Start Date", minWidth: 60},
-    {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60},
+	{id: "start", name: "Start Date", field: "Start Date", minWidth: 60},
+        {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60},
 	{id: "status", name: "Status", field: "Status", width: 100, resizable: false, formatter: statusFormatter},
-	//{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false, asyncPostRender:doPercent,formatter: dobFormatter, editor: Slick.Editors.PercentComplete},
-	{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false,formatter: dobFormatter}
-	  //,
-	 //{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
+	{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false,formatter:dobFormatter}
+	//,//{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
   ];
-  function doPercent(cellNode, row, dataContext, colDef) {
-  $(cellNode).empty().val(parseInt(dataContext["% Completion of Strategy"]))
-//	  return parseInt(dataContext["% Completion of Strategy"])
-    //$(cellNode).empty().sparkline(vals, {width: "100%"});
-  }
-
-
   var options = {
     editable: false,
     enableAddRow: false,
@@ -132,12 +122,8 @@ d3.select("#today").html(today);
     } else {
       color = "green";
     }
-    //strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
-    strz = "<span style='text-align:center!important; height:18px; display:inline-block; border-radius:10px;background-color:" + color + ";width:"+pValue+"%'>"+ pValue +"%</span>";
-	  return strz
+    return "<span class='percent-complete-barb' style='background-color:" + color + ";width:"+pValue+"%'>"+ pValue +"%</span>";
   }
-	
-	
   function statusFormatter(row, cell, value, columnDef, dataContext) {
 	var rtn = { text: value, removeClasses: 'green yellow blue red'};
 	if (value != null || value !== "") {
