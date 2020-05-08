@@ -251,4 +251,11 @@ input.editor-checkbox {
   border: 0;
 }
 
-
+.percent-complete-barb {
+  display: inline-block;
+  zheight: 6px;
+  text-align:center!important;
+  height:18px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
