@@ -85,7 +85,6 @@ var mm = today.getMonth()+1;
 var yyyy = today.getFullYear();
 today = mm + '/' + dd + '/' + yyyy;	
 d3.select("#today").html(today);
-	
   var grid;
   var columns = [
     {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title"},
@@ -122,7 +121,7 @@ d3.select("#today").html(today);
     } else {
       color = "green";
     }
-    return "<span class='percent-complete-barb' style='background-color:" + color + ";width:"+pValue+"%'>"+ pValue +"%</span>";
+    return "<span class='percent-complete-barb' style='background-color:" + color + ";width:"+pValue+"%'></span><span style='color:blue;font-size:14px'>"+pValue+"%</span>";
   }
   function statusFormatter(row, cell, value, columnDef, dataContext) {
 	var rtn = { text: value, removeClasses: 'green yellow blue red'};
