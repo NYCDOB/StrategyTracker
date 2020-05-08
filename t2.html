@@ -88,16 +88,16 @@ d3.select("#today").html(today);
 	
   var grid;
   var columns = [
-    {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title", editor: Slick.Editors.Text},
-    {id: "goal", name: "Goal", field: "Goal", width:200,editor: Slick.Editors.Text},
-	{id: "strategy", name: "Strategy Name", field: "Strategy", width: 300, editor: Slick.Editors.Text},
-	{id: "summary", name: "Summary/Objective", field: "Summary", width: 370, editor: Slick.Editors.Text},
-	{id: "source", name: "Source", field: "Source", width: 100, editor: Slick.Editors.Text},
-	{id: "owner", name: "Owner", field: "Owner", width: 100, editor: Slick.Editors.Text},
-	{id: "bureau", name: "Bureau", field: "Bureau", width: 100, editor: Slick.Editors.Text},
-    {id: "start", name: "Start Date", field: "Start Date", minWidth: 60, editor: Slick.Editors.Date},
-    {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
-	{id: "status", name: "Status", field: "Status", width: 100, editor: Slick.Editors.Text, formatter: statusFormatter},
+    {id: "num", name: "#", field: "number", width: 20, cssClass: "cell-title"},
+    {id: "goal", name: "Goal", field: "Goal", width:200},
+	{id: "strategy", name: "Strategy Name", field: "Strategy", width: 300},
+	{id: "summary", name: "Summary/Objective", field: "Summary", width: 370},
+	{id: "source", name: "Source", field: "Source", width: 100},
+	{id: "owner", name: "Owner", field: "Owner", width: 100},
+	{id: "bureau", name: "Bureau", field: "Bureau", width: 100},
+    {id: "start", name: "Start Date", field: "Start Date", minWidth: 60},
+    {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60},
+	{id: "status", name: "Status", field: "Status", width: 100, resizable: false, formatter: statusFormatter},
 	//{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false, asyncPostRender:doPercent,formatter: dobFormatter, editor: Slick.Editors.PercentComplete},
 	{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false,formatter: dobFormatter}
 	  //,
@@ -128,12 +128,12 @@ d3.select("#today").html(today);
     if (pValue < 30) {
       color = "red";
     } else if (pValue < 70) {
-      color = "silver";
+      color = "";
     } else {
       color = "green";
     }
     //strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
-    strz = "<span style='color:white;text-align:center!important;padding: 2px;height:18px;display:inline-block;border-radius: 15px;background-color:"+color+";width:50%'>"+ pValue +"%</span>";
+    strz = "<span style='color:white;font-weight:bold;text-align:center!important;height:18px;display:inline-block;border-radius:10px;background-color:"+color+";width:" +pValue+"%'>"+ pValue +"%</span>";
 	  return strz
   }
 	
