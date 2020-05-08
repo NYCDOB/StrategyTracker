@@ -37,6 +37,7 @@
 	.red {
 		background-color: #F03737;
 	}
+	.grey {background-color:#f8f8f8} 
 	.ui-state-default{
 		background: #dbdbdb;
 		font-weight: bold;
@@ -50,10 +51,12 @@
 	<a class="logo" href="https://www1.nyc.gov/site/buildings/index.page" target="_blank"> </a>
 		<label>DOB Strategy Tracker Summary Draft</label>
 	</div>
+	  
 	<div class="grid-header2" id="grid-header-div2" style="width:100%">
 		<label>Last Updated: <span id="today"></span></label>
 	</div>
-    <div id="myGrid" style="zwidth:100%;zheight:120px;"></div>
+	  
+       <div id="myGrid" style="width:100%;zheight:120px;"></div>
   </div>
 </div>
 <script src="jsData.js"></script>
@@ -130,7 +133,7 @@ d3.select("#today").html(today);
       color = "green";
     }
     //strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
-    strz = "<span style='height:18px;display:inline-block;background-color:"    +color + ";width:50%'>"+ pValue +"%</span>";
+    strz = "<span style='color:white;text-align:center!important;padding: 2px;height:18px;display:inline-block;border-radius: 15px;background-color:"+color+";width:50%'>"+ pValue +"%</span>";
 	  return strz
   }
 	
