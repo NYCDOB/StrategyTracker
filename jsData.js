@@ -81,7 +81,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "22/22/2020",
     "Status": "",
-    "% Completion of Strategy": "0%"
+    "% Completion of Strategy": "53%"
   },
   {
     "number": 8,
