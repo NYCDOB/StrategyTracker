@@ -53,7 +53,7 @@
 	<div class="grid-header2" id="grid-header-div2" style="width:100%">
 		<label>Last Updated: <span id="today"></span></label>
 	</div>
-    <div id="myGrid" style="width:100vw;zheight:120px;"></div>
+    <div id="myGrid" style="zwidth:100%;zheight:120px;"></div>
   </div>
 </div>
 <script src="jsData.js"></script>
@@ -96,8 +96,9 @@ d3.select("#today").html(today);
     {id: "due", name: "Due Date", field: "Projected \nCompletion Date", minWidth: 60, editor: Slick.Editors.Date},
 	{id: "status", name: "Status", field: "Status", width: 100, editor: Slick.Editors.Text, formatter: statusFormatter},
 	//{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false, asyncPostRender:doPercent,formatter: dobFormatter, editor: Slick.Editors.PercentComplete},
-	{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false,formatter: dobFormatter},
-	 {id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
+	{id: "%bar", name: "% Completed", field: "% Completion of Strategy", width: 100, resizable: false,formatter: dobFormatter}
+	  //,
+	 //{id: "%", name: "", field: "% Completion of Strategy", width: 50, editor: Slick.Editors.Text}
   ];
   function doPercent(cellNode, row, dataContext, colDef) {
   $(cellNode).empty().val(parseInt(dataContext["% Completion of Strategy"]))
@@ -129,7 +130,7 @@ d3.select("#today").html(today);
       color = "green";
     }
     //strz = "<span class='percent-complete-bar' style='background:" + color + ";width:" + pValue + "%'>"+pValue+"</span>";
-    strz = "<span style='height:6px;display:inline-block;background-color:orange;width:50%'></span>";
+    strz = "<span style='height:18px;display:inline-block;background-color:"    +color + ";width:50%'>"+ pValue +"%</span>";
 	  return strz
   }
 	
