@@ -9,7 +9,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "29%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 2,
@@ -21,7 +21,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "10%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 3,
@@ -33,7 +33,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "z0%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 4,
@@ -45,7 +45,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "77%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 5,
@@ -68,8 +68,8 @@ var data=[
     "Bureau": "Development and Technical Affairs",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "Not Started",
-    "% Completion of Strategy": "99%"
+    "Status": "",
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 7,
@@ -79,9 +79,9 @@ var data=[
     "Source": "NYC Department of Buildings Development Bureau 2020 Powerpoint presentation",
     "Bureau": "Development and Technical Affairs",
     "Start Date": "",
-    "Projected Completion Date": "22/22/2020",
+    "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "53%"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 8,
@@ -92,7 +92,7 @@ var data=[
     "Bureau": "Development and Technical Affairs",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "bogus status",
+    "Status": "",
     "% Completion of Strategy": "0%"
   },
   {
@@ -104,7 +104,7 @@ var data=[
     "Bureau": "Development and Technical Affairs",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+    "Status": "",
     "% Completion of Strategy": "0%"
   },
   {
@@ -117,7 +117,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "99999"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 11,
@@ -153,7 +153,7 @@ var data=[
     "Start Date": "",
     "Projected Completion Date": "",
     "Status": "",
-    "% Completion of Strategy": "junk"
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 14,
@@ -188,7 +188,7 @@ var data=[
     "Bureau": "First Commissioners Office",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "In Progress",
+    "Status": "",
     "% Completion of Strategy": "0%"
   },
   {
@@ -224,8 +224,8 @@ var data=[
     "Bureau": "Enforcement",
     "Start Date": "",
     "Projected Completion Date": "",
-    "Status": "Complete",
-    "% Completion of Strategy": "100%"
+    "Status": "",
+    "% Completion of Strategy": "0%"
   },
   {
     "number": 20,
