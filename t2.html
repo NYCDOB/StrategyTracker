@@ -74,9 +74,7 @@
 <script src="slick.editors.js"></script>
 <script src="slick.grid.js"></script>
 <script src="plugins/slick.autotooltips.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
-
 
 <script>
 var today = new Date();
@@ -105,12 +103,11 @@ d3.select("#today").html(today);
     enableCellNavigation: true,
     asyncEditorLoading: false,
     autoEdit: false,
-	autoHeight: true,
-	enableAsyncPostRender: true
+    autoHeight: true
   };
   function dobFormatter(row, cell, value, columnDef, dataContext) {
-    pValue=parseInt(dataContext["% Completion of Strategy"]);
-    if (pValue == null || pValue === "") {
+    pValue=parseInt(dataContext["% Completion of Strategy"]) ;
+    if (pValue == null || pValue === "" || isNaN(pValue)) {
       return "";
     }  
     var color;
