@@ -253,8 +253,10 @@ input.editor-checkbox {
 
 .percent-complete-barb {
   display: inline-block;
-  zheight: 6px;
-  text-align:center!important;
+  font-size:10px;
+  color:white;
+  font-weight:800;
+  text-align:right !important;
   height:18px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
